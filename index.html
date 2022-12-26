@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css" comentado caso desejarmos estilizar a página no futuro-->
+    <title>Aprendendo HTML na prática</title>
+</head>
+<body>
+    <h1>Aprendendo HTML do básico</h1>
+    <hr />
+    <h2 id="indice">Índice</h2>
+        <ul>
+            <li> <a href="#estrutura">Estrutura básica do HTML</a></li>
+            <li> <a href="#head">Head</a></li>
+            <li> <a href="#body">Body</a></li>
+            <li> <a href="#hxs">H1 a H6</a></li>
+            <li> <a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li> <a href="#tags">Tags de Texto</a></li>
+            <li> <a href="#navegabilidade">Links de Navegabilidade</a></li>
+        </ul>
+    <h3 id="estrutura">Estrutura básica do HTML</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Para uam estrutura básia de uma página HTLM, você precisa da estruturação de Head (cabeça), Body (corpo) e em alguns casos até o Footer(rodapé).</p>
+    <p>Em alguns programas que usamos para construção de códigos, os que chamamos de IDE, você pode fazer uma chamada direta para criação automática desta estrutura, chamando o comando html5 no próprio arquivo criado, puxando assim a estrutura a seguir:</p>
+    <img src="estrutura-html.PNG" alt="Imagem da Estrutura">
+    <p>Com esta estrutura você já consegue dar início a sua página em HTML.</p>
+
+    <h3 id="head">Head</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Head é a cabeça da página, a parte que não aparece para o usuário final, contudo é onde colocamos todas as informações para o nevegador. Informações importantes como a linguagem do site, os links de CSS e estilização da página, arquivos de fontes, entre outros.</p>
+
+    <h3 id="body">Body</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Já o Body é a parte visível para o usuário. Nela que desenvolvemos toda a estrutura do site, como o título da página, conteúdo, imagens, tabelas, listas, etc.</p>
+
+    <h3 id="hxs">H1 a H6</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>As tags H1 até H6 são tags usadas para configurar a importância e o destaque daquele texto para o navegador e para o usuário. Neles você consegue coloca como por exemplo H1 que tem uma ênfase maior, e por isso será exibido em um tamanho maior no navegador. H2 com um tamanho menor e assim sucessivamente até o H6.</p>
+    <p>Para criar as tags com H você precisa colocar o texto dentro das tags, como por exemplo: < h1>Texto Aqui< /h1> (lembrando que é sem espaço nas tags, pois aqui é um exemplo)</p>
+
+    <h3 id="listas">Listas Ordenadas e Não Ordenadas</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>As listas são tags que podemos usar para facilitar a criação de listas mesmo na página. Estas listas podem ser ordenadas, como por exemplo, item 1, item 2, etc. E as listas não ordenadas, onde o navegador exibe a lista sem marcações de números. Veja o exemplo de cada uma:</p>
+        <ul>Lista não ordenada
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>Lista Ordenada
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    <p>Você pode perceber que na lista não ordenada, é criado uma bolinha na frente de cada item, já na ordenada, é criado um número que segue uma sequência lógica.</p>
+    <p>Para criar uma lista você utiliza a tag < ul > e fecha com < /ul>, assim como deve criar as tags < li> e fechar com < /li> em cada linha que irá inserir um item.</li></p>
+
+    <h3 id="tags">Tags de Texto</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Existe uma infinidade de tags para texto, onde você pode consultar uma lista delas no final deste texto. Mas para destacar, vamos repassar algumas de configuração de textos simples, como:</p>
+    <p>< blockquote> que usamos paracitação de outra pessoa em texto</p>
+    <p>< sup> que usamos para escrever na parte superior de um texto, como se fosse a raiz quadrada de um número <sup>Exemplo</sup></p>
+    <p>< sub> já tem o efeito inverso, escreve na parte inferior de um texto <sub>Exemplo</sub></p> 
+    <p>< mark> serve para marcarmos partes importantes do texto, como por <mark>exemplo</mark></p>
+    <p>< small> que é utilizado para colocar um texto ou fragmento deste em um tamanho menor que o padrão do navegador, como por exemplo <small> este aqui</small></p>
+    <p>< i> utilizada para deixar parte do <i>texto em itálico</i></p>
+    <p>< u> utilizado para deixar parte do texto ou <u>texto sublinhado</u></p>
+    <p>< strong> utiliado para deixar o texto ou parte dele <strong>negritado</strong></p>
+    <p>< abbr> (ou Elemento de Abreviação HTML) representa uma abreviação e opcionalmente fornece uma descrição completa para ela.</p>
+    
+    <h3 id="navegabilidade">Links de Navegabilidade</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Listas de navegabilidade é quando podemos utilizar marcarções dentro do próprio texto para ajudar na navegabilidade do site. Um exemplo é quando o texto é muito grande e você quer voltar ao topo, você utiliza como um link de atalho para voltar ao início do texto</p>
+    <p>Usamos id="nome" (identificadores) para marcar para onde queremos ir e usamos a tag < a> criar umm link para ligar os pontos. Por exemplo: < a href="id de referencia"></p>
+    <p>Existem vários exemplos deste no texto quando você clica em (Voltar) e você é direcionado para o início da página e no ínicio da página clica sobre um dos títulos.</p>
+
+    <h3>Quer saber mais sobre as tags de HTLM?</h3>
+    <p>Deixei este link aqui para vocês sobre mais tags <a target="blank" href="https://diegomariano.com/tags-html/">diegomariano.com/tags-html</a></p>
+
+    <h2>Espero ter ajudar. Obrigado!</h2>
+
+</body>
+</html>
